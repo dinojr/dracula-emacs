@@ -270,7 +270,7 @@
    `(org-sexp-date ((,class (:foreground ,fg4))))
    `(org-special-keyword ((,class (:foreground ,rainbow-7))))
    `(org-table ((,class (:foreground ,rainbow-3))))
-   `(org-tag ((,class (:foreground ,rainbow-4 :bold t :background ,bg2))))
+   `(org-tag ((,class (:foreground ,rainbow-4 :bold t :inherit background))))
    `(org-todo ((,class (:foreground ,rainbow-5 :bold t :background ,bg2))))
    `(org-upcoming-deadline ((,class (:foreground ,rainbow-7))))
    ;; `(org-warning ((,class (:weight bold :foreground ,rainbow-4))))
