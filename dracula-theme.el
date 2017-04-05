@@ -6,7 +6,7 @@
 ;; http://zenorocha.mit-license.org
 
 ;; Author: film42
-;; Version: 1.2.8
+;; Version: 1.3.2
 ;; Package-Requires: ((emacs "24"))
 ;; URL: https://github.com/dracula/emacs
 
@@ -55,7 +55,8 @@
    'dracula
    ;; default
    `(cursor ((,class (:background ,fg3))))
-   `(default ((,class (:background ,bg1 :foreground ,fg1))))
+   `(default ((((type nil)) (:background "#000000" :foreground ,fg1))
+              (,class (:background ,bg1 :foreground ,fg1))))
    `(default-italic ((,class (:italic t))))
    `(ffap ((,class (:foreground ,fg4))))
    `(fringe ((,class (:background ,bg1 :foreground ,fg4))))
@@ -348,7 +349,7 @@
    `(which-func ((,class (:inherit ,font-lock-function-name-face))))
    `(dired-directory ((,class (:foreground ,func :weight normal))))
    `(dired-flagged ((,class (:foreground ,keyword))))
-   `(dired-header ((,class (:foreground ,fg3 :background ,func))))
+   `(dired-header ((,class (:foreground ,fg3 :background ,bg1))))
    `(dired-ignored ((,class (:inherit shadow))))
    `(dired-mark ((,class (:foreground ,var :weight bold))))
    `(dired-marked ((,class (:foreground ,builtin :weight bold))))
